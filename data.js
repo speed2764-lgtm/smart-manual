@@ -215,9 +215,10 @@ window.SMART_EQUIPMENT = [
       "장비별 RIP 버전·설정은 실물 확인 필요"
     ],
     "location": [
-      "장비 위치",
-      "to",
-      "A 창의관 실습실 203호"
+      [
+        "장비 위치",
+        "A 창의관 실습실 203호"
+      ]
     ],
     "parts": [],
     "image": "assets/images/uv_printer.png",
@@ -232,15 +233,15 @@ window.SMART_EQUIPMENT = [
       ],
       [
         "작업 영역 (X·Y·Z)",
-        "320 × 470 × 최대 95 mm (자료 기준)"
+        "실제 장비 사양 확인 필요"
       ],
       [
         "사용 프로그램",
-        "RIIN RIP"
+        "장비 설치 프로그램 확인 필요"
       ],
       [
         "공식 홈페이지",
-        "https://no1uv.com/A3"
+        "확인 필요"
       ]
     ]
   },
@@ -465,9 +466,10 @@ window.SMART_EQUIPMENT = [
       "속도·출력·초점 수치는 담당자 승인 후 등록"
     ],
     "location": [
-      "장비 위치",
-      "to",
-      "A 창의관 실습실 203호"
+      [
+        "장비 위치",
+        "A 창의관 실습실 203호"
+      ]
     ],
     "parts": [],
     "image": "assets/images/laser_cutter.png",
@@ -482,7 +484,7 @@ window.SMART_EQUIPMENT = [
       ],
       [
         "작업 영역 (X·Y·Z)",
-        "실습실 장비 사양 확인 필요"
+        "장비 사양 확인 필요"
       ],
       [
         "사용 프로그램",
@@ -786,9 +788,10 @@ window.SMART_EQUIPMENT = [
       "https://wiki.bambulab.com"
     ],
     "location": [
-      "장비 위치",
-      "to",
-      "A 창의관 실습실 203호"
+      [
+        "장비 위치",
+        "A 창의관 실습실 203호"
+      ]
     ],
     "parts": [],
     "image": "assets/images/fdm_x1_carbon.png",
@@ -1030,9 +1033,10 @@ window.SMART_EQUIPMENT = [
       "Form 4 한국어 사용 설명서(2024년 4월)"
     ],
     "location": [
-      "장비 위치",
-      "to",
-      "A 창의관 실습실 203호"
+      [
+        "장비 위치",
+        "A 창의관 실습실 203호"
+      ]
     ],
     "parts": [],
     "image": "assets/images/sla_form4.png",
@@ -1382,9 +1386,10 @@ window.SMART_EQUIPMENT = [
       }
     ],
     "location": [
-      "장비 위치",
-      "to",
-      "A 창의관 실습실 203호"
+      [
+        "장비 위치",
+        "A 창의관 실습실 203호"
+      ]
     ],
     "image": "assets/images/healthcare_mcube_case.png",
     "displaySpecs": [
@@ -1398,7 +1403,7 @@ window.SMART_EQUIPMENT = [
       ],
       [
         "공식 홈페이지",
-        "제조사 공식 주소 확인 필요"
+        "https://www.cndi.co.kr"
       ]
     ]
   }

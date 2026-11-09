@@ -8,11 +8,11 @@
  const state={tab:'steps',step:0};
  const img=e=>`<img src="${esc(e.image)}" alt="${esc(e.model)} 장비 대표 사진" loading="lazy">`;
  const header=()=>`<header class="hero"><a class="brand" href="index.html" aria-label="매뉴얼 홈"><img class="logo" src="assets/images/gimhae_logo.jpg" alt="김해대학교 로고"><span><strong>김해대학교</strong><small>AI융합의료과</small></span></a><div class="hero-title">SMART MANUAL</div><div class="hero-sub">스마트 장비 사용 매뉴얼</div></header>`;
- const bottom=()=>`<nav class="bottom" aria-label="하단 메뉴"><a href="index.html">⌂<small>홈</small></a><a href="index.html#devices">▦<small>장비목록</small></a><a href="index.html#guide">ⓘ<small>안내</small></a></nav>`;
+ const bottom=()=>`<nav class="bottom" aria-label="하단 메뉴"><a href="index.html">⌂<small>홈</small></a><a href="index.html#devices">▦<small>장비목록</small></a><a href="index.html#settings">⚙<small>설정</small></a></nav>`;
  const eqLink=(e,extra='')=>`<a class="device-tile ${extra}" href="${names[e.id]}">${img(e)}<div><strong>${esc(e.name)}</strong><small>${esc(e.model)}</small></div><span aria-hidden="true">›</span></a>`;
  function home(){
   const h=all.filter(x=>x.id!=='healthcare'), healthcare=all.find(x=>x.id==='healthcare');
-  app.innerHTML=`<div class="shell">${header()}<main><section class="intro"><strong>장비 매뉴얼</strong><p>장비 이름을 선택하거나 NFC 태그를 인식하면 해당 장비의 사용법을 확인할 수 있어요.</p></section><section id="devices"><h2>실습 장비 목록</h2><div class="device-grid">${h.map(e=>eqLink(e)).join('')}</div>${healthcare?eqLink(healthcare,'wide'):''}</section><section class="notice" id="guide"><strong>NFC 사용 안내</strong><p>휴대전화에서 NFC를 켠 뒤 장비에 부착된 태그에 접촉하세요. 해당 장비의 웹 매뉴얼이 열립니다.</p><p>매뉴얼은 실습 교육 보조자료이며, 장비 사용 시 담당자의 안전 지침을 우선합니다.</p></section></main>${bottom()}</div>`;
+  app.innerHTML=`<div class="shell">${header()}<main><section class="intro"><strong>장비 매뉴얼</strong><p>장비 이름을 선택하거나 NFC 태그를 인식하면 해당 장비의 사용법을 확인할 수 있어요.</p></section><section id="devices"><h2>실습 장비 목록</h2><div class="device-grid">${h.map(e=>eqLink(e)).join('')}</div>${healthcare?eqLink(healthcare,'wide'):''}</section><section class="notice" id="settings"><strong>NFC 사용 안내</strong><p>휴대전화에서 NFC를 켠 뒤 장비에 부착된 태그에 접촉하세요. 해당 장비의 웹 매뉴얼이 열립니다.</p><p><strong>김해대학교 · AI융합의료과</strong></p><p>매뉴얼은 실습 교육 보조자료이며, 장비 사용 시 담당자의 안전 지침을 우선합니다.</p></section></main>${bottom()}</div>`;
  }
  function eqInfo(e){
   const loc=(e.location||[]).find(x=>Array.isArray(x)&&x[0]==='장비 위치');
